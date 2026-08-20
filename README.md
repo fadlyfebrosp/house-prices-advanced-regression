@@ -1,13 +1,14 @@
 # End-to-End House Prices Prediction Pipeline
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue?logo=kaggle)](https://www.kaggle.com/code/fadlyfebro/house-prices-prediction)
 
 ## 1. Business Objective & Project Overview
-This repository contains a production-ready, end-to-end machine learning pipeline designed to predict residential real estate prices in Ames, Iowa[cite: 1]. The primary objective is to deliver highly accurate, robust predictions using advanced regression techniques, strictly aligned with the standard Kaggle evaluation metric: **Root Mean Squared Error (RMSE) of log-transformed sale prices**[cite: 1]. 
+This repository contains a production-ready, end-to-end machine learning pipeline designed to predict residential real estate prices in Ames, Iowa. The primary objective is to deliver highly accurate, robust predictions using advanced regression techniques, strictly aligned with the standard Kaggle evaluation metric: **Root Mean Squared Error (RMSE) of log-transformed sale prices**. 
 
-The architecture emphasizes pipeline integrity, modularity, and deployment-readiness, bridging the gap between exploratory data science and software engineering best practices.
+The architecture emphasizes pipeline integrity, modularity, and deployment-readiness, bridging the gap between exploratory data science and software engineering best practices. You can also view and run the interactive execution of this pipeline directly on [Kaggle](https://www.kaggle.com/code/fadlyfebro/house-prices-prediction).
 
 ## 2. Key Features
 *   **Zero-Leakage Preprocessing Pipeline:** Constructed using Scikit-Learn's `ColumnTransformer` and `Pipeline` to ensure strict separation of fit and transform steps across 79 high-dimensional features.
@@ -47,7 +48,7 @@ The architecture emphasizes pipeline integrity, modularity, and deployment-readi
 │   └── inference.py              # Prediction script for new data
 ├── submission/
 │   └── submission.csv            # Final Kaggle-formatted predictions
-├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 ## 5. Installation & Prerequisites
